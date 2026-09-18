@@ -7,6 +7,9 @@ def mostrar_nome(nome):
     print("---------------------------------\n")
 while True:
     nome_novo = input('Digite o nome: ').strip()
+    if not nome_novo:
+        print('Texto Inválido, tente novamente')
+        continue
     lista_alunos.append(nome_novo)
     mostrar_nome(nome_novo)
     cont = input('Quer continuar? (s/n): ')
