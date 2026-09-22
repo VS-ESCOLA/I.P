@@ -1,6 +1,6 @@
 lista_alunos = []
 
-def mostrar_nome(nome):
+def mostrar_nome():
     print("\n--- Lista de Alunos Cadastrados  ---")
     for i, aluno in enumerate(lista_alunos, 1):
         print(f"{i}. {aluno}")
@@ -22,3 +22,11 @@ while True:
             cont = input('Quer continuar? (s/n): ')
             if cont.lower() == 'n':
                 break
+    elif opcao == '2':
+        mostrar_nome()
+        eliminar = input('Digite o aluno a remover: ').strip()
+        if eliminar in lista_alunos:
+            lista_alunos.remove(eliminar)
+            print(f'{eliminar} foi removido com sucesso!')
+        else:
+            print('Aluno nâo encontrado.')           
