@@ -12,7 +12,7 @@ while True:
     print("3- Sair")
     opcao = input("Escola a opção que você deseja: ").strip()
     if opcao == '1':
-        while True
+        while True:
             nome_novo = input('Digite o nome: ').strip()
             if not nome_novo:
                 print('Texto Inválido, tente novamente')
