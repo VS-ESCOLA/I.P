@@ -23,6 +23,9 @@ while True:
             if cont.lower() == 'n':
                 break
     elif opcao == '2':
+        if not lista_alunos:
+            print('\nA lista está vazia! Não há alunos para remover.\n')
+        else:
         mostrar_nome()
         eliminar = input('Digite o aluno a remover: ').strip()
         if eliminar in lista_alunos:
