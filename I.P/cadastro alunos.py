@@ -13,7 +13,6 @@ def carregar_txt():
         pass
     return lista
 
-# Cargar los datos del archivo al iniciar el programa
 lista_alunos = carregar_txt()
 
 def mostrar_nome():
