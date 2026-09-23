@@ -19,7 +19,7 @@ while True:
                 print('Texto Inválido, tente novamente')
                 continue
             lista_alunos.append(nome_novo)
-            mostrar_nome(nome_novo)
+            mostrar_nome()
             cont = input('Quer continuar? (s/n): ')
             if cont.lower() == 'n':
                 break
@@ -27,11 +27,11 @@ while True:
         if not lista_alunos:
             print('\nA lista está vazia! Não há alunos para remover.\n')
         else:
-        mostrar_nome()
-        eliminar = input('Digite o aluno a remover: ').strip()
-        if eliminar in lista_alunos:
-            lista_alunos.remove(eliminar)
-            print(f'{eliminar} foi removido com sucesso!')
+            mostrar_nome()
+            eliminar = input('Digite o aluno a remover: ').strip()
+            if eliminar in lista_alunos:
+                lista_alunos.remove(eliminar)
+                print(f'{eliminar} foi removido com sucesso!')
         else:
             print('Aluno nâo encontrado.')
     elif opcao == '3':
@@ -40,5 +40,7 @@ while True:
     elif opcao == '0':
         if not lista_alunos:
             print('\nA lista está vazia!\n')
-        else
-        mostrar_nome
+        else:
+         mostrar_nome()
+    else:
+        print('Opcão Inválida!')
