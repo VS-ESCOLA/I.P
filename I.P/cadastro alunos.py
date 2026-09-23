@@ -32,8 +32,8 @@ while True:
             if eliminar in lista_alunos:
                 lista_alunos.remove(eliminar)
                 print(f'{eliminar} foi removido com sucesso!')
-        else:
-            print('Aluno nâo encontrado.')
+            else:
+                print('Aluno nâo encontrado.')
     elif opcao == '3':
         print('Saindo do Sistema.....')
         break
@@ -41,6 +41,6 @@ while True:
         if not lista_alunos:
             print('\nA lista está vazia!\n')
         else:
-         mostrar_nome()
+            mostrar_nome()
     else:
         print('Opcão Inválida!')
