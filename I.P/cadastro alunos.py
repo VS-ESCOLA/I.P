@@ -10,6 +10,7 @@ while True:
     print("1- Cadastrar aluno")
     print("2- Remover aluno")
     print("3- Sair")
+    print("0- Mostrar Lista")
     opcao = input("Escola a opção que você deseja: ").strip()
     if opcao == '1':
         while True:
@@ -36,3 +37,8 @@ while True:
     elif opcao == '3':
         print('Saindo do Sistema.....')
         break
+    elif opcao == '0':
+        if not lista_alunos:
+            print('\nA lista está vazia!\n')
+        else
+        mostrar_nome
