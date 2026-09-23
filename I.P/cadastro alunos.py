@@ -29,4 +29,7 @@ while True:
             lista_alunos.remove(eliminar)
             print(f'{eliminar} foi removido com sucesso!')
         else:
-            print('Aluno nâo encontrado.')           
+            print('Aluno nâo encontrado.')
+    elif opcao == '3':
+        print('Saindo do Sistema.....')
+        break
